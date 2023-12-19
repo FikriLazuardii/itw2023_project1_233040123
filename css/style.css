@@ -1,0 +1,210 @@
+:root {
+  --mainColor: #fef6e4;
+  --secondaryColor: #001858;
+  --acsentColor: #8bd3dd;
+}
+
+body {
+  background-color: var(--mainColor);
+  font-family: "Kanit", sans-serif;
+}
+
+section h1 {
+  color: var(--secondaryColor);
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  color: var(--acsentColor) !important;
+  font-size: 1.5rem;
+}
+
+.nav-link.active {
+  color: #f582ae !important;
+  font-weight: 900;
+}
+
+.nav-link {
+  color: var(--acsentColor) !important;
+}
+
+/* Akhir Nacbar */
+
+/* Hero */
+.color-acsent {
+  color: var(--acsentColor);
+}
+
+#hero {
+  color: var(--secondaryColor);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero h2 {
+  font-weight: 300;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+#hero img:hover {
+  filter: drop-shadow(16px 7px 8px #f582ae);
+}
+
+/* CTA */
+.btn-custom1 {
+  background-color: #f582ae;
+  text-align: center;
+  color: var(--secondaryColor);
+
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+  box-shadow: 0 0 10px #f582ae;
+}
+
+/* Akhir Hero */
+
+/* About */
+hr {
+  width: 35%;
+  height: 5px;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+#about {
+  background-color: #f3d2c1;
+  color: var(--secondaryColor);
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+/* Akhir About */
+
+/* Skill */
+#skill {
+  color: #f3d2c1;
+  padding-top: 100px;
+  padding-bottom: 180px;
+}
+
+#skill .card {
+  background-color: var(--secondaryColor);
+  height: 340px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin-top: 80px;
+}
+
+#skill .card:hover {
+  box-shadow: 0 0 20px #f582ae;
+  transform: scale(1.15);
+}
+
+/* Akhir Skill */
+
+/* Projects */
+#projects {
+  background-color: #f3d2c1;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+#projects .card {
+  text-align: center;
+  border-radius: 20px;
+  color: var(--mainColor);
+  margin-left: 20px;
+  border: 0;
+}
+
+#projects .card-body {
+  background-color: var(--secondaryColor);
+}
+
+#projects .card img {
+  border-radius: 20px 20px 0 0;
+}
+
+#projects .card .btn {
+  border-radius: 0 0 20px 20px;
+  background-color: #f582ae;
+  color: var(--secondaryColor);
+  border: 0;
+}
+
+/* Akhir Projects */
+
+/* Contact */
+#contact {
+  color: var(--secondaryColor);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* Akhir Contact */
+
+/* Footer */
+footer a {
+  color: var(--secondaryColor);
+}
+/* Akhir Footer */
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  #hero p {
+    font-size: 0.9rem;
+  }
+
+  #hero h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hero img {
+    width: 60%;
+  }
+
+  .social-icon {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #hero .row {
+    padding-bottom: 75px;
+  }
+
+  .btn-custom1 {
+    width: 80%;
+  }
+
+  #skill .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-img {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  hr {
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
