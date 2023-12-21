@@ -83,7 +83,11 @@ section h1 {
 #hero {
   color: var(--secondaryColor);
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
+}
+
+#hero .hero-name {
+  animation: SlideRight 1s 0.1s forwards;
 }
 
 #hero h1 {
@@ -114,7 +118,7 @@ section h1 {
 }
 
 .btn-custom1:hover {
-  box-shadow: 0 0 10px #f582ae;
+  box-shadow: 0 0 15px #8bd3dd;
 }
 
 /* Akhir Hero */
@@ -134,6 +138,10 @@ hr {
   padding-top: 100px;
   padding-bottom: 120px;
 }
+
+#about p {
+  text-align: justify;
+}
 /* Akhir About */
 
 /* Skill */
@@ -152,7 +160,7 @@ hr {
 }
 
 #skill .card:hover {
-  box-shadow: 0 0 20px #f582ae;
+  box-shadow: 0 0 15px #8bd3dd;
   transform: scale(1.15);
 }
 
@@ -194,6 +202,10 @@ hr {
   border: 0;
 }
 
+#projects .card .btn:hover {
+  background-color: #8bd3dd;
+}
+
 /* Akhir Projects */
 
 /* Contact */
@@ -202,13 +214,25 @@ hr {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+#contact .btn {
+  width: 100%;
+  background-color: #f582ae;
+  border: none;
+  font-size: 20px;
+  color: var(--secondaryColor);
+}
+
+#contact .btn:hover {
+  box-shadow: 0 0 15px #8bd3dd;
+}
 /* Akhir Contact */
 
 /* Footer */
 footer a {
   color: var(--secondaryColor);
-  font-size: 28px;
-  margin-left: 10px;
+  font-size: 23px;
+  margin-left: 5px;
   text-align: center;
 }
 
@@ -248,12 +272,24 @@ footer {
     width: 80%;
   }
 
+  .about-img {
+    text-align: center;
+  }
+
   #skill .card h3 {
     font-size: 1.3rem;
   }
 
-  .about-img {
-    text-align: center;
+  #skill .card {
+    width: 60%;
+    margin-left: 90px;
+    justify-content: center;
+  }
+
+  #projects .card {
+    width: 60%;
+    margin-left: 90px;
+    justify-content: center;
   }
 }
 
@@ -271,6 +307,18 @@ footer {
 @keyframes SlideLeft {
   0% {
     transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes SlideRight {
+  0% {
+    transform: translateX(-100px);
     opacity: 0;
   }
 
