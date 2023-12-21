@@ -282,6 +282,7 @@ footer {
 
   #skill .card {
     width: 60%;
+    height: 350px;
     margin-left: 90px;
     justify-content: center;
   }
