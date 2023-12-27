@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Hayam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&family=Kanit:wght@200;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="headling">5 HAYAM!</h2>
+          <p class="sub-headling">Makanan & Minuman</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">20K</h4>
+          <p class="item">Chicken</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">15K</h4>
+          <p class="item">Burger</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>5 HAYAM!</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Tutorial</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nisi voluptates animi tempora tenetur corporis?</p>
+        </div>
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Online Course</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nisi voluptates animi tempora tenetur corporis?</p>
+        </div>
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Podcast</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nisi voluptates animi tempora tenetur corporis?</p>
+        </div>
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Merch</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nisi voluptates animi tempora tenetur corporis?</p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="../latihan7/img/1.jpg" alt="" />
+        <img src="../latihan7/img/2.jpg" alt="" />
+        <img src="../latihan7/img/3.jpg" alt="" />
+        <img src="../latihan7/img/4.jpg" alt="" />
+        <img src="../latihan7/img/5.jpg" alt="" />
+        <img src="../latihan7/img/6.jpg" alt="" />
+        <img src="../latihan7/img/7.jpg" alt="" />
+        <img src="../latihan7/img/8.jpg" alt="" />
+        <img src="../latihan7/img/9.jpg" alt="" />
+        <img src="../latihan7/img/10.jpg" alt="" />
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
